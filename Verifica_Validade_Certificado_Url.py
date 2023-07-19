@@ -12,7 +12,7 @@ def get_certificate_expiry_date(hostname):
             return expiry_date
 
 # Arquivo contendo as URLs (uma URL por linha)
-url_file = "/home/leonardo/ScriptsVia/PegaDataCertificadoURL_VIA/urls"
+url_file = "urls"
 
 # Ler as URLs do arquivo
 with open(url_file, 'r') as file:
@@ -35,4 +35,3 @@ for line in lines:
         expiry_date_formatted = expiry_date.strftime("%d-%m-%Y %H:%M:%S")
         print(f"Url: {url} ")
         print(f"Valido: {expiry_date_formatted}")
-#        print()  # Linha em branco para separar as saídas
